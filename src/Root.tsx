@@ -1,4 +1,4 @@
-import {Composition, registerRoot} from 'remotion';
+import {Composition} from 'remotion';
 import {DEFAULT_BRAND} from './constants/brand';
 import {DURATION_IN_FRAMES, FPS, HEIGHT, WIDTH} from './constants/video';
 import {AnnualCheckupsVideo} from './scenes/AnnualCheckupsVideo';
@@ -20,4 +20,3 @@ export function Root() {
 	);
 }
 
-registerRoot(Root);

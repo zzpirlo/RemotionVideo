@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "remotion studio",
-    "build": "remotion bundle src/Root.tsx",
-    "render": "remotion render AnnualCheckups out/video.mp4",
+    "build": "remotion bundle src/index.ts",
+    "render": "remotion render src/index.ts AnnualCheckups out/video.mp4",
     "upgrade": "remotion upgrade"
   },
   "keywords": [
