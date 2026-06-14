@@ -3,11 +3,19 @@ import type {Brand} from '../types/schema';
 type KickerProps = {
 	brand: Brand;
 	children: string;
+	className?: string;
 };
 
-export function Kicker({brand, children}: KickerProps) {
+export function Kicker({brand, children, className}: KickerProps) {
 	return (
-		<div className="mb-8 flex items-center gap-4">
+		<div
+			className={[
+				'mb-8 flex items-center gap-4',
+				className,
+			]
+				.filter(Boolean)
+				.join(' ')}
+		>
 			<div
 				className="h-2 w-16 rounded-full"
 				style={{backgroundColor: brand.accentColor}}

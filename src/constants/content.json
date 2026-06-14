@@ -1,0 +1,38 @@
+{
+	"Hook": "Your annual checkup can spot cancer risk before symptoms do.",
+	"Problem": {
+		"headline": "Cancer risk changes quietly.",
+		"body": "Family history, lifestyle, medications, and symptoms evolve over time. Without a current prevention plan, screening gaps can stay hidden."
+	},
+	"ValuePropositions": [
+		{
+			"title": "Know your risk profile",
+			"body": "Review age, family history, lifestyle factors, and symptoms with your care team.",
+			"assetName": "feature-risk-profile.png"
+		},
+		{
+			"title": "Stay current on screenings",
+			"body": "Annual visits help confirm which screenings fit your age, history, and risk level.",
+			"assetName": "feature-screening-timeline.png"
+		},
+		{
+			"title": "Act earlier with confidence",
+			"body": "Earlier detection can open more treatment options and protect the years ahead.",
+			"assetName": "feature-earlier-action.png"
+		}
+	],
+	"CallToAction": {
+		"headline": "Schedule your next checkup.",
+		"body": "Ask which screenings are right for you and leave with a prevention plan you can follow.",
+		"buttonLabel": "Book your checkup"
+	},
+	"Assets": {
+		"logo": "logo.png",
+		"backgroundTrack": "background_track.mp3",
+		"featureImages": [
+			"feature-risk-profile.png",
+			"feature-screening-timeline.png",
+			"feature-earlier-action.png"
+		]
+	}
+}
