@@ -1,5 +1,6 @@
 import {useMemo} from 'react';
 import {AbsoluteFill, Audio, Sequence, useCurrentFrame} from 'remotion';
+import {BACKGROUND_AUDIO} from '../constants/audio';
 import content from '../constants/content.json';
 import {
 	getBeatDropProgress,
@@ -55,11 +56,13 @@ export function AdLayout({brand}: AdLayoutProps) {
 				}}
 			/>
 
-			<Audio
-				src={`/${content.Assets.backgroundTrack}`}
-				volume={duckingVolume}
-				startFrom={0}
-			/>
+			{BACKGROUND_AUDIO.enabled ? (
+				<Audio
+					src={BACKGROUND_AUDIO.src}
+					volume={duckingVolume}
+					startFrom={0}
+				/>
+			) : null}
 
 			<div className="relative z-10 h-full w-full">
 				<div
